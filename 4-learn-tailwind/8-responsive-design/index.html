@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <Title>Learn Tailwind Responsive Design</Title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- how to customize font-family and colors-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme : {
+        extend: {
+          spacing: {
+            13: '3.25rem',
+          },
+          fontFamily: {
+            inter: ['Inter']
+          },
+          colors: {
+            customcolor1: '#bada55',
+            customcolor2: '#c0ffee',
+            bgcustomcolor: '#F9F5E7'
+          }
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-bgcustomcolor">
+  <h1 class="my-8 font-bold text-3xl text-center">
+    Let's Learn 
+    <span class="bg-gradient-to-l from-blue-700 to-teal-400 bg-clip-text text-transparent">Tailwind</span> 
+    Basic Layouting
+  </h1>
+
+  <hr class="my-8 border-t-4">
+
+  <ul class="ml-8">
+    <h2 class="font-semibold text-xl">References:</h2>
+    <li>
+      <a href="https://tailwindcss.com/docs/responsive-design" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Responsive-Design
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Dm02bG6ivv4&t=553s" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        Recommended Tutorial
+      </a>
+    </li>
+  </ul>
+ 
+  <hr class="my-8 border-t-4">
+
+  <div class="container p-6 font-inter max-w-md mx-auto mb-8
+  sm:bg-red-200 md:bg-yellow-200 lg:bg-orange-200 xl:bg-green-200">
+    <h3 class="text-2xl font-bold text-slate-800">Beautiful 
+      <span 
+      class="bg-gradient-to-r from-green-500 to-amber-800 bg-clip-text text-transparent"
+      >
+        Mountain
+      </span>
+    </h3>
+    <img src="https://source.unsplash.com/1280x960?mountain" alt="mountain" 
+      class="rounded-xl shadow-xl my-3"
+    />
+    <h3 class="text-xl font-semibold text-slate-800">Let's Go On an Adventure!</h3>
+    <p class="text-slate-600 mt-1 mb-3">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis optio saepe doloremque possimus, ex voluptates. Ut officia dicta esse architecto nam alias! Repudiandae architecto quaerat quos impedit eveniet est culpa.
+    </p>
+    <div>
+      <a href="#"
+        class="inline-block bg-red-600 px-5 py-3 text-white text-sm font-semibold 
+        rounded-xl shadow-xl uppercase tracking-wider hover:bg-red-800"
+      >
+        Subscribe Youtube Channel
+      </a>
+    </div>
+  </div>
+
+  <div class="container p-6 font-inter max-w-md mx-auto 
+  sm:bg-red-200 md:bg-transparent">
+    <h3 class="text-2xl font-bold text-slate-800">Beautiful 
+      <span 
+      class="bg-gradient-to-r from-green-500 to-amber-800 bg-clip-text text-transparent"
+      >
+        Mountain
+      </span>
+    </h3>
+    <img src="https://source.unsplash.com/1280x960?mountain" alt="mountain" 
+      class="rounded-xl shadow-xl my-3"
+    />
+    <h3 class="text-xl font-semibold text-slate-800">Let's Go On an Adventure!</h3>
+    <p class="text-slate-600 mt-1 mb-3">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis optio saepe doloremque possimus, ex voluptates. Ut officia dicta esse architecto nam alias! Repudiandae architecto quaerat quos impedit eveniet est culpa.
+    </p>
+    <div>
+      <a href="#"
+        class="inline-block bg-red-600 px-5 py-3 text-white text-sm font-semibold 
+        rounded-xl shadow-xl uppercase tracking-wider hover:bg-red-800"
+      >
+        Subscribe Youtube Channel
+      </a>
+    </div>
+  </div>
+
+  <div class="container p-6 font-inter mx-auto 
+  max-w-md sm:max-w-xl md:max-w-5xl">
+    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800">Beautiful 
+      <span 
+      class="bg-gradient-to-r from-green-500 to-amber-800 bg-clip-text text-transparent"
+      >
+        Mountain
+      </span>
+    </h3>
+    <img src="https://source.unsplash.com/1280x960?mountain" alt="mountain" 
+      class="rounded-xl shadow-xl my-3 sm:my-5 sm:h-64 sm:w-full sm:object-cover"
+    />
+    <h3 class="text-2xl sm:text-3xl font-semibold text-slate-800">Let's Go On an Adventure!</h3>
+    <p class="text-slate-600 mt-1 mb-3 sm:text-xl">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis optio saepe doloremque possimus, ex voluptates. Ut officia dicta esse architecto nam alias! Repudiandae architecto quaerat quos impedit eveniet est culpa.
+    </p>
+    <div>
+      <a href="#"
+        class="inline-block bg-red-600 px-5 py-3 text-white text-xs sm:text-sm font-semibold 
+        rounded-xl shadow-xl uppercase tracking-wider hover:bg-red-800"
+      >
+        Subscribe Youtube Channel
+      </a>
+    </div>
+  </div>
+
+  <div class="mb-48">
+
+  </div>
+
+</body>
+</html>

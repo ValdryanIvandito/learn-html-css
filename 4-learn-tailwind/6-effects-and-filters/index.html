@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+  <Title>Learn Tailwind Basic Utility</Title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- how to customize font-family and colors-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme : {
+        extend: {
+          spacing: {
+            13: '3.25rem',
+          },
+          fontFamily: {
+            inter: ['Inter']
+          },
+          colors: {
+            customcolor1: '#bada55',
+            customcolor2: '#c0ffee',
+            bgcustomcolor: '#F9F5E7'
+          }
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-bgcustomcolor">
+  <h1 class="font-bold text-3xl text-center">
+    Let's Learn 
+    <span class="bg-gradient-to-l from-blue-700 to-teal-400 bg-clip-text text-transparent">Tailwind</span> 
+    Basic Utility
+  </h1>
+  <h1 class="mb-4 font-bold text-3xl text-center">
+    Effects And Filters
+  </h1>
+  <ul class="ml-8">
+    <h2 class="font-semibold text-xl">References:</h2>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-attachment" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Attachment
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-clip" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Clip
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-color" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Color
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-origin" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Origin
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-position" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Position
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-repeat" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Repeat
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-size" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Size
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-image" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Image
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/border-radius" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Border-Radius
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/border-width" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Border-Width
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/border-color" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Border-Color
+      </a>
+    </li>
+  </ul>
+ 
+  <div class="m-8 max-w-3xl mx-auto text-center">
+    <h3 class="mb-4 font-bold text-3xl">- Backgrounds Example -</h3>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Shadow and Color Effect</h3>
+    <div 
+      class="mt-[10px] max-w-md h-60 mx-auto bg-slate-300 bg-cover rounded-3xl shadow-2xl shadow-indigo-400"
+      style="background-image: url('./assets/images/random-picture.jpg');"
+    >
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Opacity Effect</h3>
+    <div 
+      class="mt-[10px] max-w-md h-60 mx-auto bg-slate-300 bg-cover rounded-3xl opacity-20"
+      style="background-image: url('./assets/images/random-picture.jpg');"
+    >
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Mix Blend Mode</h3>
+    <div 
+      class="mt-[10px] max-w-md h-60 mx-auto bg-slate-300 bg-contain bg-no-repeat bg-center rounded-3xl 
+             border-4 border-slate-400"
+      style="background-image: url('https://source.unsplash.com/500x200?beach');"
+    >
+      <div class="w-full h-full rounded-2xl bg-blue-300 mix-blend-darken"></div>
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Mix Blend Mode Combine Background Color</h3>
+    <div 
+      class="mt-[10px] max-w-md h-60 mx-auto bg-red-300 bg-contain bg-no-repeat bg-center rounded-3xl 
+             border-4 border-slate-400 bg-blend-overlay"
+      style="background-image: url('https://source.unsplash.com/500x200?beach');"
+    >
+      <div class="w-full h-full rounded-2xl bg-blue-300 mix-blend-darken"></div>
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Hover and Blur Effect</h3>
+    <div 
+      class="mt-[10px] max-w-md h-60 mx-auto bg-slate-300 bg-cover rounded-3xl blur-sm hover:blur-none"
+      style="background-image: url('./assets/images/random-picture.jpg');"
+    >
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Hover and Brightness Effect</h3>
+    <div 
+      class="mt-[10px] max-w-md h-60 mx-auto bg-slate-300 bg-cover rounded-3xl hover:brightness-90"
+      style="background-image: url('./assets/images/random-picture.jpg');"
+    >
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Backdrop Blur And Transpancy</h3>
+    <div 
+      class="mt-[10px] max-w-md h-60 mx-auto bg-slate-300 bg-cover rounded-3xl flex"
+      style="background-image: url('https://source.unsplash.com/1000x600?beach');"
+    >
+      <div class="w-[150px] h-[150px] m-auto bg-white/20 backdrop-blur-sm"></div>
+    </div>
+  </div>
+</body>
+</html>

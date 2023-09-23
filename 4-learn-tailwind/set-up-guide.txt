@@ -1,0 +1,52 @@
+Install VSCode Extentions: Tailwind CSS Intellisense, Live Preview, PostCSS Language Support
+
+
+Method-1: Play CDN
+<script src="https://cdn.tailwindcss.com"></script> // COPY THIS TO <head>
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
+
+Note: This method is not good for production but it's very easy to make prototype project quickly
+
+
+Method-2: TailWind CLI
+npm init -y
+
+npm install -D tailwindcss
+
+if node version 16 below, run:
+npm i -D tailwindcss postcss autoprefixer 
+
+npx tailwindcss init
+
+configure template (tailwind.config.js):
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./public/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+(at input.css)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch
+
+Finishing Style:
+npx tailwindcss -o ./public/css/final.css --minify

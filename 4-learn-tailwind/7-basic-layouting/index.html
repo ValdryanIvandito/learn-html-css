@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <Title>Learn Tailwind Basic Utility</Title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- how to customize font-family and colors-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme : {
+        extend: {
+          spacing: {
+            13: '3.25rem',
+          },
+          fontFamily: {
+            inter: ['Inter']
+          },
+          colors: {
+            customcolor1: '#bada55',
+            customcolor2: '#c0ffee',
+            bgcustomcolor: '#F9F5E7'
+          }
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-bgcustomcolor">
+  <h1 class="my-8 font-bold text-3xl text-center">
+    Let's Learn 
+    <span class="bg-gradient-to-l from-blue-700 to-teal-400 bg-clip-text text-transparent">Tailwind</span> 
+    Basic Layouting
+  </h1>
+
+  <hr class="my-8 border-t-4">
+
+  <ul class="ml-8">
+    <h2 class="font-semibold text-xl">References:</h2>
+    <li>
+      <a href="https://tailwindcss.com/docs/container" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Container
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/columns" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Columns
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/float" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Float
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/position" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Position
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Hq0M3zUlegE" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        Recommended Tutorial
+      </a>
+    </li>
+  </ul>
+ 
+  <hr class="my-8 border-t-4">
+
+  <!-- container -->
+  <div class="container px-8 mx-auto mb-8">
+    <div class="border-2 rounded-2xl shadow-lg p-4">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet natus ullam fuga nemo magnam quod tenetur cumque doloremque perferendis earum officiis, suscipit quas debitis iusto ut magni consequuntur consequatur cum porro rem itaque molestiae. Necessitatibus, soluta, similique harum beatae dolorem, veniam nisi reiciendis consectetur vel deleniti reprehenderit facilis. Cupiditate, esse.
+      </p>
+    </div>
+  </div>
+
+  <!-- float -->
+  <div class="container px-8 mx-auto mb-8">
+    <div class="border-2 rounded-2xl shadow-lg p-4">
+      <img src="https://source.unsplash.com/1000x600?beach" alt="beach" width="100" 
+      class="float-left mr-3"
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum quaerat ipsa deleniti necessitatibus minus ut esse distinctio optio, quas repudiandae nostrum placeat sapiente laudantium explicabo vel rerum accusamus. Nihil expedita dolores, repudiandae magni distinctio ab aliquid, fuga neque reiciendis molestias quis totam. Natus cupiditate mollitia quam reiciendis ex maiores?
+      </p>
+    </div>
+  </div>
+
+  <!-- position -->
+  <div class="container px-8 mx-auto mb-8">
+    <div class="border-2 rounded-2xl shadow-lg p-4 relative">
+      <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5 cursor-pointer">
+        <span class="m-auto">
+          ❌
+        </span>
+      </div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio cum nisi natus et quis neque iure adipisci fugiat ab nihil, iusto tenetur itaque alias, rem facilis. Adipisci fugiat, recusandae aperiam ex necessitatibus ea sint eaque architecto repudiandae pariatur. Quaerat suscipit, laboriosam maxime quidem illo nam repudiandae officiis quibusdam obcaecati facere?
+      </p>
+    </div>
+  </div>
+
+  <!-- position -->
+  <div class="container px-8 mx-auto mb-8">
+    <div class="border-2 rounded-2xl shadow-lg p-4 relative">
+      <div class="w-10 h-10 bg-sky-200 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2 cursor-pointer">
+        <span class="m-auto">
+          🔝
+        </span>
+      </div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio cum nisi natus et quis neque iure adipisci fugiat ab nihil, iusto tenetur itaque alias, rem facilis. Adipisci fugiat, recusandae aperiam ex necessitatibus ea sint eaque architecto repudiandae pariatur. Quaerat suscipit, laboriosam maxime quidem illo nam repudiandae officiis quibusdam obcaecati facere?
+      </p>
+    </div>
+  </div>
+
+  <!-- columns -->
+  <div class="container px-8 mx-auto mb-8">
+    <div class="border-2 rounded-2xl shadow-lg p-4 columns-3">
+      <img src="https://source.unsplash.com/600x400" alt="Random Image" class="mb-4">
+      <img src="https://source.unsplash.com/600x400" alt="Random Image">
+      <img src="https://source.unsplash.com/600x400" alt="Random Image" class="mb-4">
+      <img src="https://source.unsplash.com/600x400" alt="Random Image">
+      <img src="https://source.unsplash.com/600x400" alt="Random Image" class="mb-4">
+      <img src="https://source.unsplash.com/600x400" alt="Random Image">
+    </div>
+  </div>
+
+  <!-- position -->
+  <div class="mt-48">
+    <div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5 cursor-pointer">
+      <a href="#" class="m-auto">
+        🔝
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

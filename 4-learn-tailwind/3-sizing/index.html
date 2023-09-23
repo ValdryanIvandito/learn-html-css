@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <Title>Learn Tailwind Basic Utility Part-1</Title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    section, div {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="mb-4 font-bold text-3xl">
+    Let's Learn 
+    <span class="bg-gradient-to-l from-blue-700 to-teal-400 bg-clip-text text-transparent">Tailwind</span> 
+    Basic Utility Sizing
+  </h1>
+  <ul class="mb-8">
+    <h2 class="font-semibold text-xl">References:</h2>
+    <li>
+      <a href="https://tailwindcss.com/docs/width" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Width
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/min-width" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Min-Width
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/max-width" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Max-Width
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/height" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Height
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/min-height" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Min-Height
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/max-height" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Max-Height
+      </a>
+    </li>
+  </ul>
+
+  <section>
+    <h3>- Sizing Example -</h3>
+    <div class="w-32 h-32">Box-1</div>
+    <div class="w-1/2 h-20">Box-2</div>
+    <div class="max-w-xs min-h-screen">Box-3</div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <Title>Learn Tailwind Basic Utility</Title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- how to customize font-family and colors-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme : {
+        extend: {
+          spacing: {
+            13: '3.25rem',
+          },
+          fontFamily: {
+            inter: ['Inter']
+          },
+          colors: {
+            customcolor1: '#bada55',
+            customcolor2: '#c0ffee'
+          }
+        },
+      },
+    };
+  </script>
+</head>
+<body>
+  <div>
+    <h1 class="font-bold text-3xl text-center">
+      Let's Learn 
+      <span class="bg-gradient-to-l from-blue-700 to-teal-400 bg-clip-text text-transparent">Tailwind</span> 
+      Basic Utility
+    </h1>
+    <h1 class="mb-4 font-bold text-3xl text-center">
+      Backgrounds And Borders
+    </h1>
+    <ul>
+      <h2 class="font-semibold text-xl">References:</h2>
+      <li>
+        <a href="https://tailwindcss.com/docs/background-attachment" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Background-Attachment
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/background-clip" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Background-Clip
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/background-color" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Background-Color
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/background-origin" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Background-Origin
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/background-position" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Background-Position
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/background-repeat" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Background-Repeat
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/background-size" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Background-Size
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/background-image" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Background-Image
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/border-radius" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Border-Radius
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/border-width" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Border-Width
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com/docs/border-color" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+          About Border-Color
+        </a>
+      </li>
+    </ul>
+  </div>
+ 
+  <div class="m-8 max-w-3xl mx-auto text-center">
+    <h3 class="mb-4 font-bold text-3xl">- Backgrounds Example -</h3>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Scroll</h3>
+    <!-- Arbitrary Value Example: mt-[10px] bg-[#bada55]-->
+    <!-- To make scroll verticaly use overflow-y-scroll -->
+    <div 
+      class="mt-[10px] max-w-xl h-80 mx-auto bg-[#bada55] overflow-y-scroll"
+      style="background-image: url('https://source.unsplash.com/1000x600?beach');"
+    >
+      <p class="p-5 text-2xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, libero? Blanditiis quos ratione unde earum. Reprehenderit voluptate autem corporis fuga voluptatibus, nulla dolore? Veritatis asperiores soluta minima aperiam! Libero corrupti amet reprehenderit omnis debitis beatae praesentium ab. Quaerat vel nostrum eveniet voluptas iusto suscipit recusandae consequuntur laudantium molestiae veniam, non nihil maiores iste. Vero, cupiditate alias aliquam doloremque iusto esse saepe, soluta libero mollitia cumque perspiciatis harum unde neque eius velit rerum rem veritatis dolorem numquam labore perferendis dolor sequi? Perspiciatis, dolore temporibus nam porro ipsa quisquam distinctio tempore saepe laborum culpa quae, cupiditate iure adipisci deleniti inventore sint at accusantium voluptas voluptates soluta est? Harum architecto ad culpa est veritatis maxime nemo ea sed adipisci, quo nobis veniam aliquid eveniet, itaque, quam ullam beatae fuga repellat perspiciatis sunt eum dolorum non consequuntur quod? Repudiandae animi sunt voluptas cum asperiores? Voluptatum veritatis sequi reiciendis odit quisquam praesentium dicta eveniet aspernatur? Incidunt harum natus inventore magni quaerat corporis ex consequuntur quibusdam tempore, optio repellendus voluptas illum totam, voluptatem quia dignissimos minus dolorem laudantium, aspernatur dolorum! Ipsa modi tempore nostrum eum. Error fugit voluptatum facere cumque nemo accusamus dolores commodi, asperiores maxime alias harum consequatur ut culpa dolorum magnam, doloribus excepturi enim?
+      </p>
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With bg-cover</h3>
+    <!-- bg-cover to scale the background image until it fills the background layer -->
+    <div 
+      class="mt-[10px] max-w-xl h-80 mx-auto bg-slate-300 bg-cover"
+      style="background-image: url('./assets/images/random-picture.jpg');"
+    >
+    </div>
+  </div>
+  
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With bg-contain</h3>
+    <!-- bg-contain to scale the background image to the outer edges without cropping or stretching -->
+    <!-- bg-no-repeat to set up the image so that it doesn't repeat -->
+    <!-- bg-center to set up the image position at the center -->
+    <div 
+      class="mt-[10px] max-w-xl h-80 mx-auto bg-slate-300 bg-contain bg-no-repeat bg-center"
+      style="background-image: url('https://source.unsplash.com/500x200?beach');"
+    >
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Border and Rounded Shape</h3>
+    <!-- To make image rounded shape use rounded-3xl -->
+    <!-- To make border use border-4 border-slate-500 -->
+    <div 
+      class="mt-[10px] max-w-xl h-80 mx-auto bg-slate-300 bg-cover rounded-3xl border-4 border-slate-500"
+      style="background-image: url('./assets/images/random-picture.jpg');"
+    >
+    </div>
+  </div>
+
+  <div class="m-8">
+    <h3 class="text-center semi-bold">Image With Border And Circle Shape</h3>
+    <!-- bg-cover to scale the background image until it fills the background layer -->
+    <div 
+      class="mt-[10px] w-80 h-80 mx-auto bg-slate-300 bg-cover rounded-full border-2 border-black"
+      style="background-image: url('https://source.unsplash.com/1000x600?beach');"
+    >
+    </div>
+  </div>
+</body>
+</html>

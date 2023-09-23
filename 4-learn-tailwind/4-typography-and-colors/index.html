@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+  <Title>Learn Tailwind Basic Utility Part-1</Title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- how to customize font-family and colors-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme : {
+        extend: {
+          spacing: {
+            13: '3.25rem',
+          },
+          fontFamily: {
+            inter: ['Inter']
+          },
+          colors: {
+            customcolor1: '#bada55',
+            customcolor2: '#c0ffee'
+          }
+        },
+      },
+    };
+  </script>
+</head>
+<body>
+  <h1 class="mb-4 font-bold text-3xl">
+    Let's Learn 
+    <span class="bg-gradient-to-l from-blue-700 to-teal-400 bg-clip-text text-transparent">Tailwind</span> 
+    Basic Utility Font-Family And Color
+  </h1>
+  <ul>
+    <h2 class="font-semibold text-xl">References:</h2>
+    <li>
+      <a href="https://tailwindcss.com/docs/font-family" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Font-Family
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/font-size" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Font-Size
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/font-style" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Font-Style
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/font-weight" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Font-Weight
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/text-align" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Text-Align
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/text-color" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Text-Color
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-clip" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Clip
+      </a>
+    </li>
+    <li>
+      <a href="https://tailwindcss.com/docs/background-color" target="_blank" class="underline text-blue-500 hover:text-blue-800">
+        About Background-Color
+      </a>
+    </li>
+  </ul>
+
+  <section class="m-8 max-w-3xl mx-auto">
+    <h3 class="mb-4 font-bold text-3xl">- Typography Example -</h3>
+    <p class="mb-4 font-serif bg-indigo-200">
+      <a href="https://google.com" class="underline font-semibold text-blue-700">Lorem</a> ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nobis minus harum mollitia culpa, modi officiis quam repellendus consequatur. Sed itaque a, atque id voluptatibus recusandae consequuntur illo odit sint esse porro. Repellat veritatis aspernatur at fuga provident exercitationem, alias perspiciatis similique mollitia necessitatibus voluptate quisquam numquam. Deleniti, vel corporis.
+    </p>
+    <blockquote class="mb-4 font-mono italic font-thin text-xl bg-green-200">
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ullam est impedit cupiditate vitae illum ad eveniet asperiores ipsa? Sapiente!"
+    </blockquote>
+    <p class="mb-4 font-inter bg-yellow-200">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sunt labore beatae quod? Laborum odit commodi, saepe iste impedit eveniet eligendi facilis natus vero pariatur itaque omnis unde, perspiciatis nulla.
+    </p>
+    <p class="mb-4 font-sans bg-customcolor1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sunt labore beatae quod? Laborum odit commodi, saepe iste impedit eveniet eligendi facilis natus vero pariatur itaque omnis unde, perspiciatis nulla.
+    </p>
+    <p class="mb-4 font-inter bg-customcolor2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sunt labore beatae quod? Laborum odit commodi, saepe iste impedit eveniet eligendi facilis natus vero pariatur itaque omnis unde, perspiciatis nulla.
+    </p>
+    <p class="mb-4 font-inter bg-gradient-to-br from-indigo-200 via-red-400 to-yellow-300">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sunt labore beatae quod? Laborum odit commodi, saepe iste impedit eveniet eligendi facilis natus vero pariatur itaque omnis unde, perspiciatis nulla.
+    </p>
+  </section>
+</body>
+</html>
